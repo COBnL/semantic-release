@@ -5,7 +5,7 @@ module.exports = {
     '@semantic-release/gitlab'
   ],
   generateNotes: {
-    preset: '@cobl/'
+    config: '@cobnl/conventional-changelog'
   },
   analyzeCommits: {
     releaseRules: [
