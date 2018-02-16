@@ -1,5 +1,5 @@
 {
-  "name": "@cobnl/semantic-relese",
+  "name": "@cobnl/semantic-release",
   "version": "0.0.0-development",
   "description": "COBnL semantic-release shareable configuration",
   "main": "index.js",
