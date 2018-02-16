@@ -1,0 +1,58 @@
+{
+  "name": "@cobnl/semantic-relese",
+  "version": "0.0.0-development",
+  "description": "COBnL semantic-release shareable configuration",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "semantic-release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "brokenmass <massa84@gmail.com>",
+  "homepage": "https://github.com/COBnL/semantic-release",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:COBnL/semantic-release.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@cobnl/conventional-changelog": "^1.0.0",
+    "@semantic-release/git": "^3.0.1",
+    "@semantic-release/gitlab": "^2.0.3",
+    "@semantic-release/npm": "^3.0.2"
+  },
+  "devDependencies": {
+    "@cobnl/commitizen": "^1.0.1",
+    "@cobnl/commitlint": "^1.0.0",
+    "commitlint": "^6.0.0",
+    "eslint": "^4.1.1",
+    "eslint-config-canonical": "^9.2.0",
+    "husky": "^0.15.0-rc.8",
+    "lint-staged": "^6.1.0",
+    "semantic-release": "^14.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@cobnl/commitizen"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@cobnl/commitlint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
