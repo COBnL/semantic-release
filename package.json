@@ -19,9 +19,10 @@
   "license": "ISC",
   "dependencies": {
     "@cobnl/conventional-changelog": "^1.0.0",
-    "@semantic-release/git": "^3.0.1",
-    "@semantic-release/gitlab": "^2.0.3",
-    "@semantic-release/npm": "^3.0.2"
+    "@semantic-release/git": "^3.1.1",
+    "@semantic-release/gitlab": "^2.1.1",
+    "@semantic-release/npm": "^3.1.0",
+    "@semantic-release/release-notes-generator": "^6.0.7"
   },
   "devDependencies": {
     "@cobnl/commitizen": "^1.0.1",
