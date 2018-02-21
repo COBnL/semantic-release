@@ -17,11 +17,14 @@
     "url": "git@github.com:COBnL/semantic-release.git"
   },
   "license": "ISC",
+  "peerDependencies": {
+    "semantic-release": "^15.0.0"
+  },
   "dependencies": {
     "@cobnl/conventional-changelog": "^1.0.0",
-    "@semantic-release/git": "^3.1.1",
-    "@semantic-release/gitlab": "^2.1.1",
-    "@semantic-release/npm": "^3.1.0",
+    "@semantic-release/git": "^4.0.0",
+    "@semantic-release/gitlab": "^2.1.2",
+    "@semantic-release/npm": "^3.2.0",
     "@semantic-release/release-notes-generator": "^6.0.7"
   },
   "devDependencies": {
@@ -32,7 +35,7 @@
     "eslint-config-canonical": "^9.2.0",
     "husky": "^0.15.0-rc.8",
     "lint-staged": "^6.1.0",
-    "semantic-release": "^14.0.0"
+    "semantic-release": "^15.0.0"
   },
   "config": {
     "commitizen": {
