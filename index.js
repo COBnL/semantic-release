@@ -15,6 +15,7 @@ module.exports = {
   prepare: [
     {
       path: '@semantic-release/npm',
+      npmPublish: false,
       tarballDir: 'artifacts'
     },
     {
